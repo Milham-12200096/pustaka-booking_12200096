@@ -11,18 +11,19 @@ class PenggunaSeeder extends Seeder
     {
         $data = [
             [
-                'nama'   => 'Ilham',
-                'password' => md5('12200096')
+                'nama'      => 'ilham',
+                'password'  => md5('12200096')
             ],
             [
-                'nama'   => 'admin',
-                'password' => md5('123456')
+                'nama'      => 'admin',
+                'password'  => md5('12345')
             ],
             [
-                'nama'   => 'siswa',
-                'password' => md5('445566')
+                'nama'      => '12200096',
+                'password'  => md5('ilham')
             ]
         ];
+
         $p = new Pengguna();
         $p->insertBatch($data);
     }
